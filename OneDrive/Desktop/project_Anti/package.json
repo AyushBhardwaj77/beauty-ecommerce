@@ -1,0 +1,17 @@
+{
+  "name": "beauty-ecommerce-monorepo",
+  "version": "1.0.0",
+  "description": "Premium Beauty eCommerce Platform",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start:server": "npm run dev --workspace=@beauty/server",
+    "start:client": "npm run dev --workspace=@beauty/client",
+    "start:admin": "npm run dev --workspace=@beauty/admin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

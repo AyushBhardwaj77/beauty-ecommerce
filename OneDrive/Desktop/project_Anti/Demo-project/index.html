@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Graphic & Web Design Agency</title>
+    <meta name="description"
+        content="Aura is a digital design agency crafting premium web and graphic experiences inspired by Apple's minimalism.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Aura.</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Clients</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <a href="#contact" class="btn btn-small">Contact</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero fade-up">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Engineering digital<br><span class="text-gradient">elegance.</span></h1>
+                <p class="hero-subtitle">We are an independent design studio transforming complex technical problems
+                    into seamless, modern software experiences for global technology brands.</p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary">Explore Case Studies</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">Core Disciplines.</h2>
+                <p class="section-desc">Our methodology eliminates friction, prioritizing speed, accessibility, and
+                    high-fidelity execution.</p>
+            </div>
+            <div class="services-grid staggered-container">
+                <div class="service-card stagger-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                    </div>
+                    <h3>Platform Engineering</h3>
+                    <p>We architect scalable React and Next.js applications engineered for high-availability and
+                        instantaneous load times.</p>
+                </div>
+                <div class="service-card stagger-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+                        </svg>
+                    </div>
+                    <h3>Brand Systems</h3>
+                    <p>Developing cohesive visual identities, typography guidelines, and complete design tokens for
+                        enterprise scalability.</p>
+                </div>
+                <div class="service-card stagger-item">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.59 14.37a6 6 0 01-5.84 7.3A5.969 5.969 0 016.32 18H2.25m0 0a5.969 5.969 0 013.43-5.65m-3.43 5.65v-3.42m0 3.42h3.42" />
+                        </svg>
+                    </div>
+                    <h3>Product Design (UX/UI)</h3>
+                    <p>Data-driven interface design focused on reducing cognitive load and maximizing user retention
+                        across all devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">Selected Work.</h2>
+            </div>
+            <div class="portfolio-grid staggered-container">
+                <div class="portfolio-item stagger-item">
+                    <div class="portfolio-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200')">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Omni Financial Dashboard</h4>
+                        <p>FinTech · Platform Architecture</p>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <div class="portfolio-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1200')">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Verse Apparel Rebrand</h4>
+                        <p>Identity · E-Commerce Redesign</p>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <div class="portfolio-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1200')">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Novus AI Lab</h4>
+                        <p>Landing Site · Interactive 3D</p>
+                    </div>
+                </div>
+                <div class="portfolio-item stagger-item">
+                    <div class="portfolio-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&q=80&w=1200')">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Strata Health OS</h4>
+                        <p>Mobile App · Wearable Sync</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section scale-up">
+            <div class="about-content text-center">
+                <h2 class="section-title">Engineered to scale.</h2>
+                <p>We are a highly specialized boutique agency of senior engineers and product designers. We reject
+                    bloated frameworks and templated solutions — opting instead to handcraft bespoke systems that
+                    perform at the absolute frontier of what the web can do.</p>
+                <div class="about-stats staggered-container">
+                    <div class="stat stagger-item">
+                        <span class="stat-num">$2B+</span>
+                        <span class="stat-label">Client Revenue Driven</span>
+                    </div>
+                    <div class="stat stagger-item">
+                        <span class="stat-num">99.9%</span>
+                        <span class="stat-label">Application Uptime</span>
+                    </div>
+                    <div class="stat stagger-item">
+                        <span class="stat-num">12ms</span>
+                        <span class="stat-label">Avg Interaction Latency</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="section">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">Partner Endorsements.</h2>
+            </div>
+            <div class="testimonials-grid staggered-container">
+                <div class="testimonial-card stagger-item">
+                    <p class="quote">"Aura didn't just redesign our software — they revolutionized our conversion
+                        funnel. Their strict adherence to performance metrics doubled user retention in under three
+                        months."</p>
+                    <div class="author">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200"
+                            alt="Sarah Jenkins" class="avatar" loading="lazy">
+                        <div class="author-info">
+                            <h5>Sarah Jenkins</h5>
+                            <span>VP of Product, OmniPay</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card stagger-item">
+                    <p class="quote">"Finding a team that balances world-class visual aesthetics with ruthless technical
+                        engineering is almost impossible. Aura is that rare exception. Simply unparalleled."</p>
+                    <div class="author">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200"
+                            alt="David Chen" class="avatar" loading="lazy">
+                        <div class="author-info">
+                            <h5>David Chen</h5>
+                            <span>CTO, Verse Group</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="section cta-section fade-up">
+            <div class="cta-box">
+                <h2>Have a project in mind?</h2>
+                <p>We take on a limited number of clients each quarter to ensure every engagement receives our full,
+                    undivided attention. If you're building something meaningful, let's talk.</p>
+                <a href="mailto:hello@aura.studio" class="btn btn-primary btn-large">Schedule a Discovery Call</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Aura.</a>
+                <p>An independent design and engineering studio building the next generation of digital products.
+                    Remote-first. Boutique by design.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <a href="#">Twitter / X</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Dribbble</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

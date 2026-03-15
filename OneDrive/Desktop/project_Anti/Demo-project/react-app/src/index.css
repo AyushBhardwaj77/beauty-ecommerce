@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --bg: #030303;
+    --text-primary: #F5F5F7;
+    --text-secondary: #86868B;
+    --border: rgba(255, 255, 255, 0.05);
+    --border-hi: rgba(255, 255, 255, 0.15);
+    --glass: rgba(18, 18, 20, 0.4);
+    --card: rgba(22, 22, 26, 0.5);
+    --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.6);
+  }
+
+  [data-theme="light"] {
+    --bg: #F5F5F7;
+    --text-primary: #1D1D1F;
+    --text-secondary: #86868B;
+    --border: rgba(0, 0, 0, 0.05);
+    --border-hi: rgba(0, 0, 0, 0.1);
+    --glass: rgba(255, 255, 255, 0.7);
+    --card: rgba(255, 255, 255, 0.8);
+    --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  * {
+    @apply box-border m-0 p-0;
+    cursor: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #FFFFFF 10%, #E6D2B5 40%, #A266FF 80%, #6950FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass {
+    background: var(--glass);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--border-hi);
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .fade-up[data-visible="true"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scale-up {
+    opacity: 0;
+    transform: scale(0.95) translateY(30px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .scale-up[data-visible="true"] {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  .stagger-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .stagger-item[data-visible="true"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
