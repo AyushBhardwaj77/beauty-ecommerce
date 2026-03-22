@@ -2,7 +2,7 @@ services:
   - type: web
     name: beauty-store-api
     env: node
-    rootDir: OneDrive/Desktop/project_Anti/apps/server
-    buildCommand: npm install --include=dev && npx prisma generate && npm run build
-    startCommand: npm start
+    rootDir: OneDrive/Desktop/project_Anti
+    buildCommand: npm install && cd apps/server && npx prisma generate && npm run build
+    startCommand: npm run start --workspace=@beauty/server
     plan: free
