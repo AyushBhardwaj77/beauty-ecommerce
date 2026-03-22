@@ -1,7 +1,7 @@
 {
-  "name": "beauty-ecommerce-monorepo",
+  "name": "beauty-ecommerce",
   "version": "1.0.0",
-  "description": "Premium Beauty eCommerce Platform",
+  "description": "Beauty E-commerce",
   "private": true,
   "workspaces": [
     "apps/*"
