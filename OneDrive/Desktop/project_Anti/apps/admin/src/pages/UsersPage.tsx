@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getUsers, deleteUser } from '../services/api';
 import { Trash2 } from 'lucide-react';
 

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { getProducts, createProduct, updateProduct, deleteProduct } from '../services/api';
+import { useEffect, useState } from 'react';
+import { getProducts, deleteProduct } from '../services/api';
 import { Plus, Edit2, Trash2 } from 'lucide-react';
 
 export function ProductsPage() {

@@ -1,0 +1,8 @@
+﻿src/components/layout/AdminLayout.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/layout/Sidebar.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/pages/DashboardPage.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/pages/OrdersPage.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/pages/ProductsPage.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/pages/ProductsPage.tsx(2,23): error TS6133: 'createProduct' is declared but its value is never read.
+src/pages/ProductsPage.tsx(2,38): error TS6133: 'updateProduct' is declared but its value is never read.
+src/pages/UsersPage.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
